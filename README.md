@@ -1,8 +1,8 @@
 # ESP32-S3 Automated Guitar
 
-An **ESP32-S3-based automated acoustic guitar** that physically plays programmed melodies using **servomotors and solenoids**, combining embedded systems, mechanical design, and digital music representation.
+An **ESP32-S3-based automated electric guitar** that physically plays programmed melodies using **servomotors and solenoids**, combining embedded systems, mechanical design, and digital music representation.
 
-This project transforms a standard acoustic guitar into a **mechatronic musical instrument**, capable of executing predefined songs stored on a microSD card through real mechanical actuation.
+This project transforms a standard electric guitar into a **mechatronic musical instrument**, capable of executing predefined songs stored on a microSD card through real mechanical actuation.
 
 ---
 
@@ -110,9 +110,7 @@ This approach avoids full MIDI parsing while preserving musical flexibility and 
 
 - ESP32-S3 firmware source code  
 - Electrical schematics (PNG / PDF)  
-- Media assets (images and demo video links)  
-
-Mechanical CAD files are referenced but not included in this repository.
+- Media assets (images and demo video links)
 
 ---
 
@@ -141,7 +139,10 @@ The project covers the full engineering cycle:
 
 ## 👤 Authors
 
-Developed by a student mechatronics team as part of an academic project.
+Developed team *The RAMVerries*, whose memebers include:
+- David González Verdejo
+- Ethan Leonardo Guzmán Luna
+- Sebastián León Medellín
 
 ---
 
