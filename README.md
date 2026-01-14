@@ -1,6 +1,6 @@
-# ESP32 Automated Guitar
+# ESP32-S3 Automated Guitar
 
-An **ESP32-based automated acoustic guitar** that physically plays programmed melodies using **servomotors and solenoids**, combining embedded systems, mechanical design, and digital music representation.
+An **ESP32-S3-based automated acoustic guitar** that physically plays programmed melodies using **servomotors and solenoids**, combining embedded systems, mechanical design, and digital music representation.
 
 This project transforms a standard acoustic guitar into a **mechatronic musical instrument**, capable of executing predefined songs stored on a microSD card through real mechanical actuation.
 
@@ -12,12 +12,14 @@ Unlike digital synthesizers or MIDI-only systems, this project produces sound by
 
 - **Solenoids** press the frets to define the pitch  
 - **Servomotors** strum the strings  
-- An **ESP32** coordinates timing, actuation, and song execution  
+- An **ESP32-S3** coordinates timing, actuation, and song execution  
 - Songs are stored as simple text-based note sequences on a **microSD card**
 
 The entire system is **non-invasive**, meaning it can be mounted and removed without permanently modifying or damaging the guitar.
 
-![Automated guitar system](images/guitar_full.jpg)
+<p align="center">
+  <img src="images/overview.jpeg" alt="Automated guitar overview" width="600">
+</p>
 
 ---
 
@@ -43,7 +45,9 @@ Songs are selected via **DIP switches**, allowing up to 8 different melodies wit
 - Compact, fast, and mechanically simple  
 - Designed to minimize noise and excessive force  
 
-![Neck solenoids](images/neck_solenoids.jpg)
+<p align="center">
+  <img src="images/guitarNeck.jpeg" alt="Guitar neck with solenoids" width="400">
+</p>
 
 ### Strumming Mechanism (Servomotors)
 
@@ -58,30 +62,31 @@ All mechanical components were **custom-designed and 3D printed (PLA)**.
 
 ## 🔌 Electronics
 
-The system is built around an **ESP32**, selected for its performance, GPIO count, and PWM capabilities.
+The system is built around an **ESP32-S3**, selected for its performance, GPIO count, and PWM capabilities.
 
 **Main components:**
-- ESP32 microcontroller  
+- ESP32-S3 microcontroller  
 - MicroSD card module (SPI)  
 - Solenoids (fretting)  
 - SG90 servomotors (strumming)  
 - NeoPixel LEDs for visual feedback  
 - Dedicated 5 V and 3.3 V power regulation  
 
-![PCB close-up](images/pcb_closeup.jpg)
+<p align="center">
+  <img src="images/pcbCloseup.jpeg" alt="PCB close-up" width="400">
+</p>
 
 ### Electrical Schematic
 
-- PNG schematic: `schematics/schematic.png`
-- PDF schematic: `schematics/schematic.pdf`
-
-![Electrical schematic](schematics/schematic.png)
+<p align="center">
+  <img src="images/esp32GuitarSchematic_page-0002.jpg" alt="Electrical schematic" width="600">
+</p>
 
 ---
 
 ## 🧩 Firmware Overview
 
-The firmware is written using the Arduino framework for ESP32 and focuses on **deterministic timing and reliable actuation**.
+The firmware is written using the Arduino framework for **ESP32-S3** and focuses on **deterministic timing and reliable actuation**.
 
 ### Key Concepts
 
@@ -91,6 +96,8 @@ The firmware is written using the Arduino framework for ESP32 and focuses on **d
   - Associated servo channel  
 
 - **Text-based song format**:
+<note_midi>,<duration_ms>
+
 - Servo position alternation to avoid double strumming  
 - Conditional solenoid activation for open strings  
 - Hardware-based song selection via DIP switches  
@@ -101,7 +108,7 @@ This approach avoids full MIDI parsing while preserving musical flexibility and 
 
 ## 📂 Repository Contents
 
-- ESP32 firmware source code  
+- ESP32-S3 firmware source code  
 - Electrical schematics (PNG / PDF)  
 - Media assets (images and demo video links)  
 
