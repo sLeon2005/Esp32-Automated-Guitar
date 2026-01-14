@@ -3,7 +3,6 @@
 An **ESP32-S3-based automated electric guitar** that physically plays programmed melodies using **servomotors and solenoids**, combining embedded systems, mechanical design, and digital music representation.
 
 This project transforms a standard electric guitar into a **mechatronic musical instrument**, capable of executing predefined songs stored on a microSD card through real mechanical actuation.
-
 ---
 
 ## 🎸 Project Overview
@@ -76,10 +75,13 @@ The system is built around an **ESP32-S3**, selected for its performance, GPIO c
   <img src="images/pcbCloseup.jpeg" alt="PCB close-up" width="400">
 </p>
 
-### Electrical Schematic
+### <a href="esp32GuitarSchematic.pdf" class="image fit"><img src="images/marr_pic.jpg" alt="">Electrical Schematic</a>
 
 <p align="center">
-  <img src="images/esp32GuitarSchematic_page-0002.jpg" alt="Electrical schematic" width="600">
+  <img src="images/esp32GuitarSchematic_page-0001.jpg" alt="Electrical schematic, page 1" width="600">
+</p>
+<p align="center">
+  <img src="images/esp32GuitarSchematic_page-0002.jpg" alt="Electrical schematic, page 2" width="600">
 </p>
 
 ---
